@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#form-section,
+#recruit-list {
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.recruit-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.participants {
+  font-weight: bold;
+}
+
+.join-btn {
+  background-color: #008cba;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  background-color: #007bb5;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플록플록 Sign In</title>
+    <!-- Google Sign-In Client ID -->
+    <meta name="google-signin-client_id" content="1064412886859-suh76kdu1hgsbfe8kqmp4m2j7cl4k7i5.apps.googleusercontent.com">
+    <link rel="stylesheet" href="css/signinpage.css">
+    <!-- Google Platform API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="flogfloglogo.png" alt="플록플록 Logo">
+        </div>
+        <h1>플록플록</h1>
+        
+        <!-- Google Sign-In Button -->
+        <div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFailure"></div>
+        
+        <!-- Sign Out Button -->
+        <div class="signout-button" onclick="signOut();">
+            <button>Sign out</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Google Sign-In -->
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            var authInstance = gapi.auth2.getAuthInstance();
+
+            if (authInstance.isSignedIn.get()) {
+                console.log('Google User:', googleUser);
+                console.log('ID:', profile.getId());
+                console.log('Name:', profile.getName());
+                console.log('Image URL:', profile.getImageUrl());
+                console.log('Email:', profile.getEmail());
+
+                // Save to localStorage for testing
+                localStorage.setItem('userID', profile.getId());
+                localStorage.setItem('userName', profile.getName());
+                localStorage.setItem('userEmail', profile.getEmail());
+            } else {
+                console.error('User is not signed in.');
+            }
+        }
+
+        function onFailure(error) {
+            console.error('Google Sign-In Error:', error);
+        }
+
+        function signOut() {
+            var authInstance = gapi.auth2.getAuthInstance();
+            authInstance.signOut().then(function () {
+                console.log('User signed out.');
+                alert('Signed out successfully');
+
+                // Clear localStorage
+                localStorage.removeItem('userID');
+                localStorage.removeItem('userName');
+                localStorage.removeItem('userEmail');
+            }).catch(function (error) {
+                console.error('Sign-Out Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>모집글 목록</title>
     <link rel="stylesheet" href="css/recruit.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="recruit-form.html">모집글 등록</a>
-      </nav>
-    </header>
+</head>
+<body>
 
-    <div id="recruit-list">
-      <h1>모집글 목록</h1>
-      <div id="recruit-items"></div>
+  <div class="app-container">
+    <!-- 상단 바 -->
+    <div class="header">
+        <div class="area-notification">
+            북구
+        </div>
+        <div class="app-title">플록플록</div>
+        <div class="notification-icon">
+            <img src="assets/pictogram/basicBell.png" alt="Notification">
+        </div>
     </div>
 
-    <footer>
-      <p>© 2024 모집 플랫폼</p>
-    </footer>
+    <!-- 모집글 등록 이미지 버튼 -->
+    <div class="recruit-form-link">
+        <a href="recruit-form.html">
+            <img src="assets/plusbutton.png" alt="모집글 등록" class="register-img" />
+        </a>
+    </div>
 
-    <script src="js/recruit-list.js"></script>
-  </body>
+    <!-- 모집글 목록 -->
+    <div class="main-content">
+        <h1>모집글 목록</h1>
+        <div id="recruit-items"></div>
+    </div>
+
+    <!-- 하단 네비게이션 바 -->
+    <div class="footer">
+        <div class="nav-item">
+            <img src="assets/pictogram/grayRunning.png" alt="Running" />
+        </div>
+        <div class="nav-item">
+            <img src="assets/pictogram/grayLightning.png" alt="Energy" />
+        </div>
+        <div class="nav-item">
+            <img src="assets/pictogram/grayRoad.png" alt="Route" />
+        </div>
+        <div class="nav-item">
+            <img src="assets/pictogram/greenUser.png" alt="User" />
+        </div>
+    </div>
+  </div>
+
+  <script src="js/recruit-list.js"></script>
+</body>
 </html>

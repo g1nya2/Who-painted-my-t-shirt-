@@ -30,7 +30,7 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.profile-icon img, .notification-icon img {
+.notification-icon img {
     width: 30px;
     height: 30px;
     border-radius: 50%;

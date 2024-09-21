@@ -16,5 +16,13 @@ courses.forEach((course, index) => {
     const courseElement = document.createElement('div');
     courseElement.classList.add('course-item');
     courseElement.innerText = course;
+
+    // Add a click event listener to each course item
+    courseElement.addEventListener('click', function() {
+        // Store the selected course in localStorage
+        localStorage.setItem('selectedCourse', index); // Storing the index of the course
+        window.location.href = 'view-map.html'; // Redirect to the view-map page
+    });
+
     courseItemsContainer.appendChild(courseElement);
 });

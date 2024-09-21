@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const courseSelect = document.getElementById("course-select");
+    
+
+    // 등록 버튼 클릭 이벤트
     document.getElementById('register-button').addEventListener('click', function () {
         const title = document.getElementById('title').value;
-        const maxPeople = document.getElementById('max-people').value;
+        const maxPeople = courseSelect.value; // 선택된 코스 값
         const content = document.getElementById('content').value;
 
         if (title && maxPeople && content) {
@@ -12,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const newCourse = {
                 title: title,
                 content: content,
-                maxPeople: parseInt(maxPeople),
+                maxPeople: maxPeople,
                 currentPeople: 0,
                 recommendCount: 0
             };

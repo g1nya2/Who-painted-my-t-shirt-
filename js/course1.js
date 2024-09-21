@@ -41,6 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        // 코스 항목 클릭 시 리뷰 페이지로 이동
+        courseItem.addEventListener('click', function () {
+            // 코스의 index를 URL에 포함하여 리뷰 페이지로 이동
+            window.location.href = `review.html?index=${index}`;
+        });
+
         // 코스 항목에 추가
         courseItem.appendChild(courseTitle);
         courseItem.appendChild(recommendBtn);

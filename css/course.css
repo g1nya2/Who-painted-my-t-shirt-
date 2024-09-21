@@ -66,6 +66,33 @@ h1 {
     margin-bottom: 20px;
   }
 
+#form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*입력 필드 스타일*/
+#title, #content {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#title:focus, #content:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
 #course-items {
     border: 1px solid #ddd;
   padding: 15px;
@@ -120,6 +147,40 @@ h1 {
     right: 20px;
 }
 
+.select-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#course-select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#register-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#register-button:hover {
+    background-color: #45a049;
+}
+
+#up-arrow, #down-arrow {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -131,4 +192,16 @@ h1 {
 .nav-item img {
     width: 30px;
     height: 30px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .app-container {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
 }

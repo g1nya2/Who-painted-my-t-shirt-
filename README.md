@@ -9,9 +9,9 @@
 팀명과 팀원 소개
 <table>
  <tr>
-    <td align="center"><a href="https://github.com/g1nya2"><img src="https://avatars.githubusercontent.com/geunchanKim" width="130px;" alt=""></a></td>
-    <td align="center"><a href="https://github.com/codingbird1234"><img src="https://avatars.githubusercontent.com/codingbird1234" width="130px;" alt=""></a></td>
-    <td align="center"><a href="https://github.com/Alexarius"><img src="https://avatars.githubusercontent.com/g1nya2" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/g1nya2"><img src="https://avatars.githubusercontent.com/g1nya2" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/bbukkubbang"><img src="https://avatars.githubusercontent.com/bbukkubbang" width="130px;" alt=""></a></td>
+    <td align="center"><a href="https://github.com/Alexarius"><img src="https://avatars.githubusercontent.com/Alexarius" width="130px;" alt=""></a></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/geunchanKim"><b>김근희</b></a></td>

@@ -44,6 +44,7 @@ body {
 .recruit-form-link {
   text-align: center;
   margin: 20px 0;
+  padding-left: 200px;
 }
 
 .recruit-form-link img.register-img {
@@ -56,7 +57,6 @@ body {
   padding: 20px;
   background-color: #ffffff;
   min-height: 400px; /* Adjust as needed */
-  overflow-y: auto;
 }
 
 h1 {
@@ -65,11 +65,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Make recruit-items scrollable */
 #recruit-items {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
   background-color: #f9f9f9;
+  height: 300px; /* Set a fixed height */
+  overflow-y: auto; /* Enable scrolling */
 }
 
 .recruit-item {
@@ -85,14 +88,14 @@ h1 {
 }
 
 .join-btn {
-  background-color: #008cba;
+  background-color: #4CAF50;
   color: white;
   padding: 5px 10px;
   cursor: pointer;
 }
 
 .join-btn:hover {
-  background-color: #007bb5;
+  background-color: #4CAF50;
 }
 
 .footer {

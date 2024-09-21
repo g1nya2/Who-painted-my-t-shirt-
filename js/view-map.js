@@ -10,14 +10,30 @@ const courseMaps = {
     7: ["1코스: 8-1", "2코스: 8-2", "3코스: 8-3"]  // 침산정
 };
 
+// List of course names to be used for displaying the title
+const courseNames = [
+    "금호강하중도",
+    "꽃보라동산",
+    "운암지수변공원",
+    "팔달대교 야경",
+    "경북대학교 캠퍼스",
+    "함지공원",
+    "구암서원",
+    "침산정"
+];
+
 // Get the selected course index from localStorage
 const selectedCourse = localStorage.getItem('selectedCourse');
 
-// Get the container to display the course map
+// Get the elements to update
 const courseItemsContainer = document.getElementById('course-items');
+const courseTitleElement = document.querySelector('h1');
 
 // Check if a course is selected and if the course exists in courseMaps
 if (selectedCourse !== null && courseMaps[selectedCourse]) {
+    // Update the course title with the corresponding course name
+    courseTitleElement.innerText = courseNames[selectedCourse] + " 코스";
+
     // Display the relevant map information
     courseMaps[selectedCourse].forEach((map, index) => {
         const courseElement = document.createElement('div');
@@ -26,5 +42,5 @@ if (selectedCourse !== null && courseMaps[selectedCourse]) {
         courseItemsContainer.appendChild(courseElement);
     });
 } else {
-    courseItemsContainer.innerText = "No course selected or map not available.";
+    courseTitleElement.innerText = "No course selected or map not available.";
 }

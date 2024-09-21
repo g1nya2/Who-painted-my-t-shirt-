@@ -24,7 +24,38 @@
         <div id="course-form">
           <div id="form-section">
             <input type="text" id="title" placeholder="제목" />
-            <input type="number" id="max-people" placeholder="1~10경" />
+            
+            <!-- 북구8경코스 선택 - select 태그로 변경 -->
+            <div class="select-container">
+              <select id="course-select">
+                <!-- 1경-1 ~ 8경-3까지 옵션 추가 -->
+                <option value="1경-1">1경-1</option>
+                <option value="1경-2">1경-2</option>
+                <option value="1경-3">1경-3</option>
+                <option value="2경-1">2경-1</option>
+                <option value="2경-2">2경-2</option>
+                <option value="2경-3">2경-3</option>
+                <option value="3경-1">3경-1</option>
+                <option value="3경-2">3경-2</option>
+                <option value="3경-3">3경-3</option>
+                <option value="4경-1">4경-1</option>
+                <option value="4경-2">4경-2</option>
+                <option value="4경-3">4경-3</option>
+                <option value="5경-1">5경-1</option>
+                <option value="5경-2">5경-2</option>
+                <option value="5경-3">5경-3</option>
+                <option value="6경-1">6경-1</option>
+                <option value="6경-2">6경-2</option>
+                <option value="6경-3">6경-3</option>
+                <option value="7경-1">7경-1</option>
+                <option value="7경-2">7경-2</option>
+                <option value="7경-3">7경-3</option>
+                <option value="8경-1">8경-1</option>
+                <option value="8경-2">8경-2</option>
+                <option value="8경-3">8경-3</option>
+              </select>
+            </div>
+            
             <textarea id="content" placeholder="코멘트"></textarea>
             <button id="register-button">등록하기</button>
           </div>
@@ -35,7 +66,7 @@
       <div class="footer">
         <div class="nav-item">
           <a href="course1.html">
-            <img src="assets/pictogram/grayRunning.png" alt="Running" />
+            <img src="assets/pictogram/greenRunning.png" alt="Running" />
           </a>
         </div>
         <div class="nav-item">
@@ -45,7 +76,7 @@
           <img src="assets/pictogram/grayRoad.png" alt="Route" />
         </div>
         <div class="nav-item">
-          <img src="assets/pictogram/greenUser.png" alt="User" />
+          <img src="assets/pictogram/grayUser.png" alt="User" />
         </div>
       </div>
     </div>

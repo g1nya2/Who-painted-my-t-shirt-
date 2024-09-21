@@ -6,7 +6,7 @@
 -	S타입 대구 시내의 환경 문제를 해결하고 지속가능한 발전을 지원하는 서비스 
 
 ## 팀원 소개
-### 누가 내 티셔츠 색칠했어
+### 👕🖌️누가 내 티셔츠 색칠했어🖌️👕
 <table>
  <tr>
     <td align="center"><a href="https://github.com/g1nya2"><img src="https://avatars.githubusercontent.com/g1nya2" width="130px;" alt=""></a></td>

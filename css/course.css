@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+    width: 320px;
+    height: 100vh; /* Ensures it takes up the full screen height */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.app-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.course-form-link {
+    text-align: center;
+    margin: 20px 0;
+    padding-left: 200px;
+  }
+
+.main-content {
+    flex-grow: 1; /* Makes the main content grow and fill remaining space */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+#course-items {
+    border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recommend-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.recommend-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.register-img {
+    width: 50px;
+    height: 50px;
+}
+
+.recruit-form-link {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+}

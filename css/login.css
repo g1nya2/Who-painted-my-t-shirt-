@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+#signup-btn {
+  width: 150px;
+}
+.notification-icon {
+  text-align: center; /* Center the image inside the div */
+}
+.bell-icon img {
+  width: 80px; /* Adjust the size of the logo */
+  margin-bottom: 20px;
+}
+#signup-btn,
+#login-btn {
+  width: 150px;
+  font-weight: bold; /* 글자 두껍게 */
+  color: #4caf50; /* 초록색 텍스트 */
+  background-color: white; /* 버튼 배경 흰색 */
+  border: 2px solid #4caf50; /* 초록색 테두리 */
+}
+
+#form-title {
+  font-weight: 900; /* Maximum boldness */
+  color: #4caf50; /* Green color */
+  margin-bottom: 20px; /* Adjust the space between the logo and the text below */
+  position: relative;
+  top: -10px; /* Move the text upward by 10px */
+  text-align: center; /* Center the text horizontally */
+  font-size: 18px; /* Adjust font size if needed */
+}
+
+button:hover {
+  background-color: #4caf50; /* 마우스를 올릴 때 초록색 배경 */
+  color: white; /* 마우스를 올릴 때 텍스트 흰색 */
+}
+
+#flogflog {
+  font-weight: 900; /* Maximum boldness */
+  color: #4caf50; /* Green color */
+  margin-bottom: 20px; /* Adjust the space between the logo and the text below */
+  position: relative;
+  top: -10px; /* Move the text upward by 10px */
+  text-align: center; /* Center the text horizontally */
+  font-size: 18px; /* Adjust font size if needed */
+}
+
+.app-container {
+  max-height: 690px;
+  width: 360px;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column; /* 세로로 나열 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  padding: 20px; /* 내부 여백 */
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #458747;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#message {
+  margin-top: 20px;
+  color: red;
+}

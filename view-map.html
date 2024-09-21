@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>모집글 목록</title>
-    <link rel="stylesheet" href="css/recruit.css" />
+    <title>코스 목록</title>
+    <link rel="stylesheet" href="css/view.css" />
 </head>
 <body>
 
@@ -20,17 +20,10 @@
         </div>
     </div>
 
-    <!-- 모집글 목록 -->
+    <!-- 코스 목록 -->
     <div class="main-content">
-        <h1>모집글 목록</h1>
-        <div id="recruit-items"></div>
-    </div>
-
-    <!-- 모집글 등록 이미지 버튼 -->
-    <div class="recruit-form-link">
-        <a href="recruit-form.html">
-            <img src="assets/plusbutton.png" alt="모집글 등록" class="register-img" />
-        </a>
+        <h1>N경 코스</h1>
+        <div id="course-items"></div>
     </div>
 
     <!-- 하단 네비게이션 바 -->
@@ -39,21 +32,21 @@
             <img src="assets/pictogram/grayRunning.png" alt="Running" />
         </div>
         <div class="nav-item">
-            <img src="assets/pictogram/greenLightning.png" alt="Energy" />
+            <a href="recruit-list.html">
+                <img src="assets/pictogram/grayLightning.png" alt="Energy" />
+            </a>
         </div>
         <div class="nav-item">
             <a href="view-course.html">
-                <img src="assets/pictogram/grayRoad.png" alt="Route" />
+                <img src="assets/pictogram/greenRoad.png" alt="Route" />
             </a>
         </div>
         <div class="nav-item">
             <img src="assets/pictogram/grayUser.png" alt="User" />
         </div>
     </div>
-
-    
   </div>
 
-  <script src="js/recruit-list.js"></script>
+  <script src="js/view-map.js"></script>
 </body>
 </html>

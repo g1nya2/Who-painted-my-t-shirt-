@@ -1,6 +1,5 @@
 // Define the course-specific maps
 const courseMaps = {
-<<<<<<< HEAD
     0: [
         {
             name: "course 1",
@@ -139,16 +138,6 @@ const courseMaps = {
         }
     ],
     // Add additional routes for each 경 as needed
-=======
-    0: ["1경-1", "1경-2", "1경-3"], // 금호강하중도
-    1: ["2경-1", "2경-2", "2경-3"], // 꽃보라동산
-    2: ["3경-1", "3경-2", "3경-3"], // 운암지수변공원
-    3: ["4경-1", "4경-2", "4경-3"], // 팔달대교 야경
-    4: ["5경-1", "5경-2", "5경-3"], // 경북대학교 캠퍼스
-    5: ["6경-1", "6경-2", "6경-3"], // 함지공원
-    6: ["7경-1", "7경-2", "7경-3"], // 구암서원
-    7: ["8경-1", "8경-2", "8경-3"]  // 침산정
->>>>>>> 2e8429424dd34a1f61d257b8726eb667589b8099
 };
 
 // List of course names to be used for displaying the title
@@ -180,7 +169,6 @@ if (selectedCourse !== null && courseMaps[selectedCourse]) {
         // Create a container for the map
         const courseElement = document.createElement('div');
         courseElement.classList.add('course-item-map');
-<<<<<<< HEAD
 
         // Create the map div with a unique ID for each map
         const mapDiv = document.createElement('div');
@@ -190,9 +178,6 @@ if (selectedCourse !== null && courseMaps[selectedCourse]) {
         courseElement.appendChild(mapDiv);
 
         // Append the course element with the map to the container
-=======
-        // courseElement.innerText = map;
->>>>>>> 2e8429424dd34a1f61d257b8726eb667589b8099
         courseItemsContainer.appendChild(courseElement);
 
         // Initialize the Kakao map after adding the div to the DOM

@@ -41,16 +41,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
       return;
     }
 
-    // 비밀번호 중복 확인
-    for (let i = 0; i < localStorage.length; i++) {
-      const storedUser = JSON.parse(localStorage.getItem(localStorage.key(i)));
-      if (storedUser.password === password) {
-        document.getElementById("message").textContent =
-          "비밀번호가 중복되었습니다.";
-        return;
-      }
-    }
-
     // 사용자 데이터 저장
     const userData = {
       password: password,
@@ -62,12 +52,18 @@ document.getElementById("form").addEventListener("submit", function (e) {
     resetForm();
   } else if (document.getElementById("form-title").textContent === "로그인") {
     // 사용자 데이터 확인
-    const storedData = JSON.parse(localStorage.getItem(username));
-    if (storedData && storedData.password === password) {
-      alert("로그인 되었습니다.");
-      // 세션 저장
-      sessionStorage.setItem("loggedInUser", username);
-      window.location.href = "1.html";
+    const storedData = localStorage.getItem(username);
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      if (parsedData.password === password) {
+        alert("로그인 되었습니다.");
+        // 세션 저장
+        sessionStorage.setItem("loggedInUser", username);
+        window.location.href = "recruit-list.html"; // 1.html
+      } else {
+        document.getElementById("message").textContent =
+          "로그인 실패: 사용자 이름 또는 비밀번호가 잘못되었습니다.";
+      }
     } else {
       document.getElementById("message").textContent =
         "로그인 실패: 사용자 이름 또는 비밀번호가 잘못되었습니다.";

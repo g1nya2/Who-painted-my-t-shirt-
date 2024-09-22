@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kakao Maps Marker Example</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8bcc5e4a6bc013327bca3efb9a05c8d"
+    ></script>
+  </head>
+  <body>
+    <div id="map" style="width: 100%; height: 400px"></div>
+
+    <!-- 좌표가 출력될 영역 -->
+    <div id="coordinates" style="margin-top: 20px">
+      <h3>클릭한 좌표</h3>
+      <ul id="coordsList"></ul>
+    </div>
+
+    <script>
+      var mapContainer = document.getElementById("map"),
+        mapOption = {
+          center: new kakao.maps.LatLng(35.8853, 128.61), // Map center
+          level: 3, // Zoom level
+          mapTypeId: kakao.maps.MapTypeId.ROADMAP, // Map type
+        };
+
+      // Create the map
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+
+      // Array to store marker positions
+      var markersPosition = [];
+
+      // Array to store marker objects
+      var markers = [];
+
+      // Add event listener to capture clicks on the map
+      kakao.maps.event.addListener(map, "click", function (mouseEvent) {
+        var latLng = mouseEvent.latLng;
+
+        // Add marker at the clicked position
+        addMarker(latLng);
+
+        // Store the latitude and longitude in markersPosition as a 2D array
+        markersPosition.push([latLng.getLat(), latLng.getLng()]);
+
+        // Display the coordinates on the screen
+        displayCoordinates(latLng.getLat(), latLng.getLng());
+
+        // Log the markersPosition array to check
+        console.log(markersPosition);
+      });
+
+      // Function to add marker on the map
+      function addMarker(position) {
+        var marker = new kakao.maps.Marker({
+          position: position,
+          draggable: true, // Allow marker to be draggable
+          map: map, // Add marker to the map
+        });
+
+        // Add marker to the markers array
+        markers.push(marker);
+      }
+
+      // Function to display coordinates on the screen
+      function displayCoordinates(lat, lng) {
+        var coordsList = document.getElementById("coordsList");
+        var li = document.createElement("li");
+        li.innerText = `new kakao.maps.LatLng(${lat},${lng}),`;
+        coordsList.appendChild(li); // Add the new coordinate to the list
+      }
+
+      // Convert WGS84 (lat, lng) to WTM using Kakao API
+      function convertToWTM(lat, lng) {
+        var coord = new kakao.maps.LatLng(lat, lng);
+        var wtmCoord = kakao.maps.transCoord.toWTM(coord); // WTM conversion
+
+        return { x: wtmCoord.getLng(), y: wtmCoord.getLat() };
+      }
+
+      // Example to convert and log WTM coordinates
+      function convertAndLogWTM() {
+        for (var i = 0; i < markersPosition.length; i++) {
+          var lat = markersPosition[i][0];
+          var lng = markersPosition[i][1];
+
+          var wtmCoords = convertToWTM(lat, lng);
+
+          console.log(`WTM: x = ${wtmCoords.x}, y = ${wtmCoords.y}`);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ const courseMaps = {
     0: [
         {
             name: "1경-1",
-            center: new kakao.maps.LatLng(35.900087940579276,128.55929069181593), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.900087940579276,128.55929069181593),
             lines: [
                 [
                     new kakao.maps.LatLng(35.9034909756013,128.56508383497788),
@@ -31,7 +31,7 @@ const courseMaps = {
     1: [
         {
             name: "1경-2",
-            center: new kakao.maps.LatLng(35.900087940579276,128.55929069181593), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.900087940579276,128.55929069181593),
             lines: [
                 [
                     new kakao.maps.LatLng(35.90352859983308,128.56496273816188),
@@ -59,7 +59,7 @@ const courseMaps = {
     2: [
         {
             name: "1경-3",
-            center: new kakao.maps.LatLng(35.901398270524425,128.56108853888963), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.901398270524425,128.56108853888963),
             lines: [
                 [
                     new kakao.maps.LatLng(35.90359151927458,128.56497505336364),
@@ -90,7 +90,7 @@ const courseMaps = {
     3: [
         {
             name: "2경-1",
-            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89081120314001,128.59696092466518),
@@ -137,7 +137,7 @@ const courseMaps = {
     4: [
         {
             name: "2경-2",
-            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89081759176954,128.5969887388252),
@@ -160,7 +160,7 @@ const courseMaps = {
     5: [
         {
             name: "2경-3",
-            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717), // Example for course 2 center
+            center: new kakao.maps.LatLng(35.889884431216075,128.59990189102717),
             lines: [
                 [
                     new kakao.maps.LatLng(35.88887592051309,128.60136552212333),
@@ -186,7 +186,7 @@ const courseMaps = {
     6: [
         {
             name: "3경-1",
-            center: new kakao.maps.LatLng(35.93245677894916,128.56708680608907), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.93245677894916,128.56708680608907),
             lines: [
                 [
                     new kakao.maps.LatLng(35.93290397728938,128.5673449397325),
@@ -205,7 +205,7 @@ const courseMaps = {
     7: [
         {
             name: "3경-2",
-            center: new kakao.maps.LatLng(35.93208169373141,128.5675170676111), // Example for course 3 center
+            center: new kakao.maps.LatLng(35.93208169373141,128.5675170676111),
             lines: [
                 [
                     new kakao.maps.LatLng(35.93177869199763,128.56691275934878),
@@ -220,7 +220,7 @@ const courseMaps = {
     8: [
         {
             name: "3경-3",
-            center: new kakao.maps.LatLng(35.93208169373141,128.5675170676111), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.93208169373141,128.5675170676111),
             lines: [
                 [
                     new kakao.maps.LatLng(35.931907644542804,128.5687684543174),
@@ -240,7 +240,7 @@ const courseMaps = {
     9: [
         {
             name: "4경-1",
-            center: new kakao.maps.LatLng(35.90022573180077,128.602887249244), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.90022573180077,128.602887249244),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89803446905307,128.5989445417045),
@@ -281,7 +281,7 @@ const courseMaps = {
     10: [
         {
             name: "4경-2",
-            center: new kakao.maps.LatLng(35.8999299077142,128.5995613724726), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.8999299077142,128.5995613724726),
             lines: [
                 [
                     new kakao.maps.LatLng(35.896983273751715,128.59599954497006),
@@ -320,7 +320,7 @@ const courseMaps = {
     11: [
         {
             name: "4경-3",
-            center: new kakao.maps.LatLng(35.89763152153357,128.60010487826867), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.89763152153357,128.60010487826867),
             lines: [
                 [
                     new kakao.maps.LatLng(35.90014409123973,128.6049512067272),
@@ -379,7 +379,7 @@ const courseMaps = {
     12: [
         {
             name: "5경-1",
-            center: new kakao.maps.LatLng(35.88778370009875,128.60908694952246), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.88778370009875,128.60908694952246),
             lines: [
                 [
                     new kakao.maps.LatLng(35.88843416899916,128.60391194957958),
@@ -440,7 +440,7 @@ const courseMaps = {
     13: [
         {
             name: "5경-2",
-            center: new kakao.maps.LatLng(35.889973944927156,128.61408697538127), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.889973944927156,128.61408697538127),
             lines: [
                 [
                     new kakao.maps.LatLng(35.885306361371555,128.61473415846777),
@@ -486,7 +486,7 @@ const courseMaps = {
     14: [
         {
             name: "5경-3",
-            center: new kakao.maps.LatLng(35.88987152278129,128.6077836876409), // Example for course 2 center
+            center: new kakao.maps.LatLng(35.88987152278129,128.6077836876409),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89231888474951,128.6092396440471),
@@ -515,7 +515,7 @@ const courseMaps = {
     15: [
         {
             name: "6경-1",
-            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385),
             lines: [
                 [
                     new kakao.maps.LatLng(35.94338185325515,128.56804223111416),
@@ -544,7 +544,7 @@ const courseMaps = {
     16: [
         {
             name: "6경-2",
-            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385), // Example for course 3 center
+            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385),
             lines: [
                 [
                     new kakao.maps.LatLng(35.943436197005205,128.5680211414949),
@@ -574,7 +574,7 @@ const courseMaps = {
     17: [
         {
             name: "6경-3",
-            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.94241988832362,128.56890420914385),
             lines: [
                 [
                     new kakao.maps.LatLng(35.943089734239265,128.57039685632157),
@@ -609,7 +609,7 @@ const courseMaps = {
     18: [
         {
             name: "7경-1",
-            center: new kakao.maps.LatLng(35.88966015733441,128.54441832355485), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.88966015733441,128.54441832355485),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89196122579288,128.55360508348662),
@@ -630,7 +630,7 @@ const courseMaps = {
     19: [
         {
             name: "7경-2",
-            center: new kakao.maps.LatLng(35.896630624996476,128.56044114351477), // Example for course 3 center
+            center: new kakao.maps.LatLng(35.896630624996476,128.56044114351477),
             lines: [
                 [
                     new kakao.maps.LatLng(35.891952646365546,128.55357169213588),
@@ -644,7 +644,7 @@ const courseMaps = {
     20: [
         {
             name: "7경-3",
-            center: new kakao.maps.LatLng(35.89630940902532,128.54065456802624), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.89630940902532,128.54065456802624),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89773479516172,128.54684011090023),
@@ -666,7 +666,7 @@ const courseMaps = {
     21: [
         {
             name: "8경-1",
-            center: new kakao.maps.LatLng(35.89752497308674,128.5852092529396), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.89752497308674,128.5852092529396),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89847379501219,128.58518110499386),
@@ -688,7 +688,7 @@ const courseMaps = {
     22: [
         {
             name: "8경-2",
-            center: new kakao.maps.LatLng(35.89730515320927,128.5861601102665), // Example for course 3 center
+            center: new kakao.maps.LatLng(35.89730515320927,128.5861601102665),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89775798799319,128.5854769388588),
@@ -715,7 +715,7 @@ const courseMaps = {
     23: [
         {
             name: "8경-3",
-            center: new kakao.maps.LatLng(35.89687572500135,128.58626506207582), // Center of Kyungpook National University
+            center: new kakao.maps.LatLng(35.89687572500135,128.58626506207582),
             lines: [
                 [
                     new kakao.maps.LatLng(35.89730926670127,128.58687177771415),
@@ -774,12 +774,23 @@ if (selectedCourse !== null) {
             const courseElement = document.createElement('div');
             courseElement.classList.add('course-item-map');
 
+            courseElement.style.display = 'block';
+            courseElement.style.textAlign = 'center'; // Optionally center the content
+
             // Create the map div with a unique ID for each map
             const mapDiv = document.createElement('div');
             mapDiv.id = `map${mapIndex}`;
-            mapDiv.style.width = '300px';
-            mapDiv.style.height = '300px';
+            mapDiv.style.width = '240px';
+            mapDiv.style.height = '280px';
+            mapDiv.style.margin = '0 auto'; // Center the map div
             courseElement.appendChild(mapDiv);
+
+            // Add the course name below the map
+            const courseName = document.createElement('div');
+            courseName.innerText = mapData[0].name; // Display the name of the course
+            courseName.style.marginTop = '1px'; // Add spacing between map and text 
+            courseName.style.whiteSpace = 'nowrap'; // Prevent line breaks
+            courseElement.appendChild(courseName); // Add the name below the map
 
             // Append the course element with the map to the container
             courseItemsContainer.appendChild(courseElement);

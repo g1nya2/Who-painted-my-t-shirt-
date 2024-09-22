@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 코스 목록을 화면에 렌더링
   if (courses.length === 0) {
-    courseItemsContainer.innerHTML = "<p>등록된 코스가 없습니다.</p>";
+    courseItemsContainer.innerHTML = "<p>등록된 리뷰가 없습니다.</p>";
   } else {
     courses.forEach((course, index) => {
       createCourseItem(course, index);

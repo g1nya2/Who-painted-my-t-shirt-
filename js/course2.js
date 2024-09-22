@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("courseReview", JSON.stringify(courseReview));
 
         // 성공 메시지 및 페이지 이동
-        alert("코스가 성공적으로 등록되었습니다.");
+        alert("리뷰가 성공적으로 등록되었습니다.");
         window.location.href = "course1.html"; // 등록 후 목록 페이지로 이동
       } else {
         alert("모든 필드를 입력해주세요.");

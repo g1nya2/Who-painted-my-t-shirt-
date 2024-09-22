@@ -59,7 +59,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
         alert("로그인 되었습니다.");
         // 세션 저장
         sessionStorage.setItem("loggedInUser", username);
-        window.location.href = "recruit-list.html"; // 1.html
+        window.location.href = "course1.html"; // 1.html
       } else {
         document.getElementById("message").textContent =
           "로그인 실패: 사용자 이름 또는 비밀번호가 잘못되었습니다.";
